@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple weather app</title>
+</head>
+<body> 
+    <div class="main">
+        <div class = "card">
+            <div class = "search" id="search">
+                <input type="text" placeholder="enter city name" spellcheck="false" id="city-input">
+                <i class="fa-solid fa-magnifying-glass icon" id="icon"></i>
+            </div>
+        </div>  
+    
+        <div class="weather-info hidden" id="weather-info">
+            <img src="images/clear.png" style="width: 15rem; height: 15rem;" id="clouds">
+            <h1 id="temperature" style="font-size: 3rem; margin-bottom: 0.3rem;">22°c</h1>
+            <h2 class="city-name" id="city-name">new york</h2>
+            <div class="details" id="details">
+                <div class="cols">
+                    <i class="fa-solid fa-droplet ic"></i>
+                    <div>
+                        <p class="gg" id="humidity">55%</p>
+                        <p>humidity</p>
+                    </div>
+                </div>
+                <div class="cols">
+                    <i class="fa-solid fa-wind ic"></i>
+                    <div>
+                        <p class="gg" id="wind-speed">69km/h</p>
+                        <p>wind speed</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <p id="error-message" class="hidden" style="font-weight: 600;">City not found. Please try again.</p>
+    <script src="script.js"></script>
+</body>
+</html>
